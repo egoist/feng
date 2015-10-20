@@ -12,7 +12,7 @@ I plan to scaffold these techs for my short-hand use.
 - [x] Webpack
 - [x] CSS modules
 - [ ] PostCSS
-- [ ]Express(optional)
+- [ ] Express(optional)
 
 ## How
 
