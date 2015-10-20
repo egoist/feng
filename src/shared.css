@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font: 15px/1.5 Helvetica, serif;
+}
+
+.app {
+  max-width: 500px;
+  margin: 120px auto;
+  border: 5px solid #f0f0f0;
+  padding: 40px;
+  text-align: center;
+}

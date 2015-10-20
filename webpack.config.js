@@ -1,7 +1,7 @@
 var fs = require('fs')
 var path = require('path')
-var jade = require('jade')
-var ReactToHtmlPlugin = require('react-to-html-webpack-plugin')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -17,12 +17,22 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.(js|jsx)$/, loader: 'babel-loader', exclude: /node_modules/ },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader')
+      },
+      {
+        test: /\.(js|jsx)$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
+      },
     ]
   },
   plugins: [
-    new ReactToHtmlPlugin('index.html', 'main', {
-      template: jade.compile(fs.readFileSync(__dirname + '/src/index.jade', 'utf-8'))
+    new ExtractTextPlugin('style.[contenthash].css', { allChunks: true }),
+    new HtmlWebpackPlugin({
+      title: 'feng',
+      template: './src/index.template'
     })
   ]
 }
