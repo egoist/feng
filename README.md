@@ -12,7 +12,7 @@ I plan to scaffold these techs for my short-hand use.
 - [x] Webpack
 - [x] CSS modules
 - [x] PostCSS
-- [ ] Express(optional)
+- [ ] Running script to enable server-side mode
 
 ## How
 
