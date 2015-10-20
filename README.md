@@ -11,7 +11,7 @@ I plan to scaffold these techs for my short-hand use.
 - [ ] Redux
 - [x] Webpack
 - [x] CSS modules
-- [ ] PostCSS
+- [x] PostCSS
 - [ ] Express(optional)
 
 ## How
