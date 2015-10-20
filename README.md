@@ -6,13 +6,13 @@ front-end: new generation.
 
 I plan to scaffold these techs for my short-hand use.
 
-- React
-- React Router
-- Redux
-- Webpack
-- CSS modules
-- PostCSS
-- Express(optional)
+- [x] React
+- [ ] React Router
+- [ ] Redux
+- [x] Webpack
+- [x] CSS modules
+- [ ] PostCSS
+- [ ]Express(optional)
 
 ## How
 
