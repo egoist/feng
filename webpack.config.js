@@ -28,6 +28,12 @@ module.exports = {
       },
     ]
   },
+  postcss: function () {
+    return [
+      require('cssgrace'),
+      require('cssnext')()
+    ]
+  },
   plugins: [
     new ExtractTextPlugin('style.[contenthash].css', { allChunks: true }),
     new HtmlWebpackPlugin({

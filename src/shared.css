@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font: 15px/1.5 Helvetica, serif;
+  opacity: 1;
 }
 
 .app {
