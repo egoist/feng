@@ -6,29 +6,37 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf ./build",
-    "build": "npm run clean && webpack -p",
-    "dev": "npm run clean && webpack-dev-server --hot --port 8080"
+    "build": "npm run clean && NODE_ENV=production webpack --config scripts/webpack.config.prod.js",
+    "dev": "node scripts/devServer.js",
+    "preview": "serve --port 8080 ./build"
   },
   "author": "EGOIST",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^5.8.25",
     "babel-loader": "^5.3.2",
+    "babel-plugin-react-transform": "^1.1.1",
     "css-loader": "^0.20.2",
     "cssgrace": "^2.0.2",
     "cssnext": "^1.8.4",
+    "express": "^4.13.3",
     "extract-text-webpack-plugin": "^0.8.2",
     "history": "^1.12.5",
     "html-webpack-plugin": "^1.6.2",
-    "jade": "^1.11.0",
     "postcss": "^4.1.16",
     "postcss-loader": "^0.7.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-router": "^1.0.0-rc3",
+    "react-transform-catch-errors": "^1.0.0",
+    "react-transform-hmr": "^1.0.1",
+    "redbox-react": "^1.1.1",
     "rimraf": "^2.4.3",
+    "serve": "^1.4.0",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.1"
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-dev-server": "^1.12.1",
+    "webpack-hot-middleware": "^2.4.1"
   }
 }

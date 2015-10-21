@@ -10,6 +10,7 @@ I plan to scaffold these techs for my short-hand use.
 - [ ] React Router
 - [ ] Redux
 - [x] Webpack
+- [x] Hot Reload with error catch
 - [x] CSS modules
 - [x] PostCSS
 - [ ] Running script to enable server-side mode
