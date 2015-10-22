@@ -3,6 +3,8 @@ var webpack = require('webpack')
 var fs = require('fs')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var AssetsPlugin = require('assets-webpack-plugin')
+var assetsPluginInstance = new AssetsPlugin()
 
 module.exports = {
   devtool: 'source-map',
@@ -32,7 +34,8 @@ module.exports = {
       title: 'feng',
       template: './src/index.template',
       filename: './index.html'
-    })
+    }),
+    assetsPluginInstance
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']

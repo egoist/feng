@@ -1,6 +1,6 @@
 # feng
 
-front-end: new generation.
+🚧 front-end: new generation.
 
 ## What
 
@@ -14,6 +14,7 @@ I plan to scaffold these techs for my short-hand use.
 - [x] CSS modules
 - [x] PostCSS
 - [ ] Running script to enable server-side mode
+- [ ] Use shell script to run build commands
 
 ## How
 
