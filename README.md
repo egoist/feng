@@ -1,5 +1,7 @@
 # feng
 
+[![Join the chat at https://gitter.im/egoist/feng](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/egoist/feng?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 front-end: new generation.
 
 ## What
